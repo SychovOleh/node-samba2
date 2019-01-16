@@ -166,7 +166,7 @@ Returns a write stream on the file. Unlike fs.createWriteStream, this function i
 
 Example:
 ```javascript
-smb2Client.createWriteStream('path\\to\\the\\file', function (err, readStream) {
+smb2Client.createWriteStream('path\\to\\the\\file', function (err, writeStream) {
     if (err) throw err;
     var readStream = fs.createReadStream('localFile')
     readStream.pipe(writeStream)
